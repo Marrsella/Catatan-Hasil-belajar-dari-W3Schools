@@ -247,7 +247,127 @@ Dimulai dengan tag &lt;ol&gt;, setiap item dalam daftar dimulai dengan &lt;li&gt
 - &lt;dt&gt; : untuk mendefinisikan istilah (nama)
 - &lt;dd&gt; : untuk mendeskripsikan setiap istilah
 
-# Blok HTML dan ELemen Sebaris
+# Blok HTML dan ELemen Sebaris (border)
+- Dua elemen blok yang umum digunakan adalah:
+1. &lt;p&gt; : mendefinisikan paragraf dalam dokumen HTML
+2. &lt;div&gt; : mendefinisikan divisi atau bagian dalam dokumen HTML
+
+- &lt;span&gt; digunakan untuk memborder kata yang dipilih saja. Jika digabungkan dengan CSS maka dapat memberi gaya pada bagian teks namun memerlukan atribut style, class, dan id.
+
+  # Elemen Div HTML
+  1. Untuk Kalimat dengan menggunakan &lt;div&gt;
+  2. Untuk blok semua kalimat maka letakkan &lt;div&gt; sebelum menaruhkan elemen lainnya
+  3. Untuk blok rata tengah maka atur margin properti CSS ke auto
+  4. Untuk blok paragraf yang berbeda maka tambahkan beberapa &lt;div&gt; pada halaman yang sama.
+  5. Untuk blok berdampingan pakai properti CSS &lt;float&gt; ini hasilnya akan mepet, jika ingin ada celah maka pakai in-line block.
+ 
+# Atribut Kelas HTML
+1. Atribut kelas digunakan untuk menunjuk ke nama kelas dalam style sheet.
+2. Nama kelas peka pada huruf kecil dan besar
+3. getElementsByClassName() digunakan JavaScript untuk mengakses elemen dengan nama kelas tertentu.
+
+ # Atribut id HTML
+ Digunakan untuk menentukan id unik untuk elemen HTML. Nama id peka dengan huruf kecil dan besar. Setidaknya atribut id mengandung satu karakter, tidak dapat dimulai dengan angka, dan tidak boleh spasi.
+
+ - Atribut id <br>
+Nilai atribut id harus unik dalam dokumen HTML. Atribut ini iddigunakan untuk menunjuk ke deklarasi gaya tertentu dalam lembar gaya.
+- Perbedaan antara kelas dan id <br>
+Kelas bisa digunakan oleh beberapa elemen HTML sedangkan nama id hanya boleh digunakan oleh satu elemen HTML saja.
+- Bookmark HTML dengan ID dan Tautan <br>
+Untuk menggunakan bookmark, harus membuatnya terlebih dahulu, lalu menambahkan tautan ke dalamnya. Lalu, saat tautan diklik, halaman akan bergulir ke lokasi yang terdapat penanda halaman.
+- Menggunakan atribut id di JavaScript <br>
+JavaScript dapat mengakses elemen dengan id tertentu dengan getElementById().
+
+# Iframe HTML
+Digunakan untuk menampilkan halaman web di dalam halaman web. Sintaksisnya adalah sebagai berikut:
+&lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;
+
+- Mengatur tinggi dan lebar Iframe <br>
+Gunakan atribut height dan width.
+- Hapus batasan <br>
+Dengan cara tambahkan style dan gunakan properti CSS border.
+- Target untuk tautan <br>
+Atribut targettautan harus merujuk ke nameatribut iframe.
+
+# Bahasa Pemogramana HTML dan JavaScript
+Ada 2 tag HTML yang digunakan yaitu: <br>
+1. &lt;script&gt; untuk mendefinisikan skrip sisi klien (JavaScript)
+2. &lt;nonscript&gt; untuk mendefinisikan konten alternatif yang akan ditampilkan kepada pengguna yang telah menonaktifkan skrip di browser mereka.
+
+# Jalur Berkas HTML
+- Jalur Berkas HTML
+Jalur berkas menggambarkan lokasi berkas dalam struktur folder situs web. Jalur berkas digunakan saat menautkan ke berkas eksternal, seperti: <br>
+1. Halaman web
+2. Gambar
+3. Lembar gaya
+4. JavaScript dalam bahasa Inggris
+
+- Jalur File Absolut <br>
+URL lengkap ke suatu berkas.
+
+- Jalur File Relatif <br>
+Menunjuk ke berkas yang relatif terhadap halaman saat ini.
+
+# Kepala HTML
+- &lt;head&gt; : untuk metadata (data tentang data) diletakkan antara &lt;html&gt; dan &lt;body&gt;.
+- &lt;title&gt; : untuk menentukan judul dokumen.
+- &lt;style&gt; : untuk menentukan informasi gaya untuk satu halaman HTML.
+- &lt;link&gt; : untuk mendefinisikan hubungan antara dokumen saat ini dan sumber daya eksternal. 
+- &lt;meta&gt; : untuk menentukan set karakter, deskripsi halaman, kata kunci, penulis dokumen, dan pengaturan viewport (area yang terlihat oleh pengguna di halaman web).
+- &lt;script&gt; : untuk mendefinisikan JavaScript sisi klien.
+- &lt;base&gt; : menentukan URL dasar dan/atau target untuk semua URL relatif di suatu halaman.
+
+# Tata Letak HTML
+- &lt;header&gt; : Menentukan header untuk dokumen atau bagian
+- &lt;nav&gt; : Menentukan sekumpulan tautan navigasi
+- &lt;section&gt; : Menentukan bagian dalam dokumen
+- &lt;article&gt; : Mendefinisikan konten yang independen dan mandiri
+- &lt;aside&gt; : Mendefinisikan konten selain konten (seperti sidebar)
+- &lt;footer&gt; : Menentukan footer untuk dokumen atau bagian
+- &lt;details&gt; : Menentukan detail tambahan yang dapat dibuka dan ditutup oleh pengguna sesuai permintaan
+- &lt;summary&gt; : Menentukan judul untuk &lt;details&gt; elemen
+
+Ada 4 teknik tata letak HTML
+1. Kerangka kerja CSS <br>
+menggunakan kerangka kerja CSS, seperti W3.CSS atau Bootstrap .
+2. Properti float CSS
+3. Kotak fleksibel CSS <br>
+memastikan bahwa elemen berperilaku sesuai prediksi saat tata letak halaman harus mengakomodasi berbagai ukuran layar dan perangkat tampilan yang berbeda.
+4. Jaringan CSS <br>
+dengan baris dan kolom, sehingga memudahkan dalam mendesain halaman web tanpa harus menggunakan float dan pemosisian.
+
+# Desain Web Responsif HTML
+tentang penggunaan HTML dan CSS untuk secara otomatis mengubah ukuran, menyembunyikan, mengecilkan, atau memperbesar situs web, agar terlihat bagus di semua perangkat (desktop, tablet, dan ponsel).
+1. Mengatur viewport <br>
+Dengan menambahkan &lt;meta&gt; ke semua halaman web.
+2. Gambar responsif <br>
+gambar yang skalanya dapat disesuaikan dengan ukuran browser apa pun. Kalau pakai width maka bisa di zoom, sedangkan kalau pakai max-width maka tidak bisa dizoom besar dari ukuran aslinya.
+3. Menampilkan Gambar Berbeda Tergantung pada Lebar Browser <br>
+&lt;picture&gt; untuk menentukan gambar yang berbeda untuk ukuran jendela browser yang berbeda.
+4. Ukuran Teks Responsif <br>
+Ukuran teks dapat diatur dengan satuan "vw", yang berarti "lebar tampilan".
+
+# Kode Komputer HTML
+- &lt;kbd&gt; : mendefinisikan input keyboard
+- &lt;samp&gt; : mendefinisikan contoh keluaran dari program komputer
+- &lt;code&gt; : mendefinisikan sepotong kode komputer
+- &lt;var&gt; : mendefinisikan variabel dalam pemrograman atau dalam ekspresi matematika
+- &lt;pre&gt; : endefinisikan teks yang telah diformat sebelumnya
+
+#
+
+
+
+   
+
+
+
+  
+
+  
+
+
+
 
 
 
