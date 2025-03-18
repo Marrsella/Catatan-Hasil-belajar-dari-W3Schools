@@ -11,11 +11,13 @@ Semua struktur ini diakhiri dengan / atau tag penutup.
 # Editor HTML
 Mempelajari HTML dengan Notepad
 1. Buka Notepad
-2. Tulis beberapa HTML
+2. Tulis beberapa HTML<br>
     <img width="487" alt="Screenshot 2025-03-18 093536" src="https://github.com/user-attachments/assets/4710ff2f-228d-4145-a7bd-7fe60708c0e7" />
-3. Simpan halaman HTML
+    
+3. Simpan halaman HTML<br>
     <img width="487" alt="Screenshot 2025-03-18 093536" src="https://github.com/user-attachments/assets/94178c57-c336-4a30-8fa7-512d361edfe7" />
-4. Lihat halaman HTML di browser
+    
+4. Lihat halaman HTML di browser<br>
    ![Screenshot 2025-03-18 093504](https://github.com/user-attachments/assets/357a0030-bfc1-49bf-a1b0-210707c5a668)
 
 # HTML Dasar
@@ -77,9 +79,9 @@ Atribut tittle mendefiniskan beberapa informasi tambahan tentang suatu elemen.
 
 # HTML Paragraf &lt;p&gt;
 - Tampilan HTML <br>
-Meskipun sudah dikasih spasi tambahan atau baris tambahan (enter) hasilnya secara otomatis tidak akana ada spasinya.
+Meskipun sudah dikasih spasi tambahan atau baris tambahan (enter) hasilnya secara otomatis tidak akan ada spasinya.
 - Aturan Horizontal HTML<br>
-Menggunakan tag <hr> untuk memberikan pemisah antara paragraf satu dengan paragraf lainnya dengan garis horizontal.
+Menggunakan tag &lt;hr&gt; untuk memberikan pemisah antara paragraf satu dengan paragraf lainnya dengan garis horizontal.
 - Pemutusan Baris HTML<br>
 Untuk memberikan spasi maka perlu menggunakan elemen &lt;br&gt;
 - Menulis Puisi<br>
@@ -97,6 +99,139 @@ Properti untuk Style
 - font teks : font-family
 - ukuran teks : font-size
 - align teks : text-align
+
+# Pemformatan Teks HTML
+Elemen pemformatan dirancang untuk menampilkan jenis teks khusus:
+- &lt;b&gt; : teks tebal
+- &lt;strong&gt; : teks penting
+- &lt;i&gt; : teks miring
+- &lt;em&gt; : teks yang ditekankan
+- &lt;mark&gt; : teks yang ditandai
+- &lt;small&gt; : teks lebih kecil
+- &lt;del&gt; : teks dihapus
+- &lt;ins&gt; : teks disisipkan
+- &lt;sub&gt; : teks subskrip (pangkat bawah)
+- &lt;sup&gt; : teks superskrip (pangkat atas)
+
+# Kutipan HTML
+- &lt;blockquote&gt; : untuk definisikan bagian yang dikutip dari sumber lain
+- &lt;q&gt; : untuk definisikan kutipan pendek (ada tanda kutip)
+- &lt;abbr&gt; : untuk definisikan singkatan.
+- &lt;address&gt; : untuk definisikan informasi penulis (ditampilkan italic)
+- &lt;cite&gt; : untuk definisikan judul suatu karya (ditampilkan italic)
+- &lt;bdo&gt; : untuk mengganti arah teks saat ini
+
+# Komentar HTML
+- Tag Komentar HTML
+Untuk menambahkan komentar ke sumber HTML perlu menggunakan sintaks berikut:<br>
+&lt;!-- Write your comments here --&gt; <br>
+ini tidak ditampilkan di browser
+
+- Dengan komentar kita dapat:
+1. menempatkan pemberitahuan dan pengingat dalam kode HTML
+2. menyembunyikan konten sementara
+3. menyembunyikan konten sebaris
+
+# Warna HTML
+1. Nama Warna
+- Tomato : merah
+- Orange : oren
+- DodgerBlue : biru
+- MediumSeaGreen : hijau
+- Gray : abu-abu
+- SlateBlue : Ungu
+- Violet : pink
+- LightGray : abu-abu muda
+  
+2. Warna Teks
+Contoh penggunaan: <br>
+&lt;h1 style="color:Tomato;">Hello World</h1&gt;
+
+3. Warna Batas
+Contoh penggunaan: <br>
+&lt;h1 style="border:2px solid Tomato;">Hello World</h1&gt;
+
+4. Nilai Warna (stabilo)
+Contoh penggunaan: <br>
+&lt;h1 style="background-color:rgb(255, 99, 71);"&gt;... &lt;/h1&gt;
+
+# Bahasa Pemograman HTML dan CSS
+CSS (Cascading Style Sheets) digunakan untuk memformat tata letak halamat web. 
+
+Berikut adalah atribut CSS HTML: <rb>
+ - style : untuk gaya sebaris
+
+Berikut adalah elemen CSS HTML: <rb> 
+ - &lt;style&gt; : untuk menentukan CSS internal
+ - &lt;link&gt; : untuk merujuk ke file CSS eksternal
+ - &lt;head&gt; : untuk menyimpan elemen &lt;style&gt; dan &lt;link&gt;
+
+Berikut adalah properti CSS HTML: <rb>
+ - color : untuk warna teks
+ - font-family : untuk font teks
+ - font size : untuk ukuran teks
+ - border : untuk batas
+ - padding : untuk spasi di dalam perbatasan
+ - margin : untuk spasi di laur batas
+
+# Tautan HTML (Hyperlink)
+Ketika diklik tautannya dapat melompat ke dokumen lain. Tag yang digunakan &lt;a&gt; memiliki sintaks berikut: <br>
+&lt;a href="url"&gt;Link text&lt;/a&gt;
+
+1. Atribut Target (menentukan tempat untuk membuka dokumen yang ditautkan)
+- _self: Default. Membuka dokumen di jendela/tab yang sama saat diklik
+- _blank: Membuka dokumen di jendela atau tab baru
+- _parent: Membuka dokumen di bingkai induk
+- _top: Membuka dokumen di badan penuh jendela
+
+2. URL Absolut vs. URL Relatif
+Menggunakan atribut href. Bedanya kalau Absolut (web lengkap), sedangkan relative (tanpa bagian "https://wwww")
+
+3. Menggunakan Gambar Sebagai Tautan
+Dengan cara memasukkan tag &lt;img&gt; di dalam tag &lt;a&gt;
+
+ 4. Tautan ke alamat email
+Dengan cara menggunakan mailto: di dalam atribut href.
+
+5. Tombol sebagai tautan
+Dengan cara menggunakan tombol HTML JavaScript.
+
+6. Judul Tautan
+Dengan cara menggunakan atribut tittle.
+
+# Gambar HTML
+Tag &lt;img&gt; memerlukan dua atribut:
+- src : Menentukan jalur ke gambar
+- alt : Menentukan teks alternatif untuk gambar
+
+Berikut sintaksisnya, <br>
+&lt;img src="url" alt="alternatetext"&gt;
+
+- Gunakan HTML width adn height untuk ukuran lebar dan tinggi gambar
+- Gunakan properti CSS float untuk membiarkan gambar melayang ke kanan dan ke kiri
+
+# Ikon HTML
+Cara menambahkan favicon di HTML:
+1. simpan gambar favicon Anda ke direktori akar server web Anda, atau buat folder di direktori akar yang disebut gambar
+2.  simpan gambar favicon Anda di folder ini. Nama umum untuk gambar favicon adalah "favicon.ico"
+3. tambahkan &lt;link&gt;elemen ke file "index.html" Anda, setelah &lt;title&gt;elemen
+4. simpan berkas "index.html" dan muat ulang di peramban
+
+# Judul Halaman HTML
+Elemen &lt;title&gt;:
+- mendefinisikan judul di bilah alat browser
+- memberikan judul untuk halaman saat ditambahkan ke favorit
+- menampilkan judul halaman di hasil mesin pencari
+
+# Tabel HTML
+
+
+
+
+
+
+
+
 
 
 
