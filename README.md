@@ -223,7 +223,35 @@ Elemen &lt;title&gt;:
 - memberikan judul untuk halaman saat ditambahkan ke favorit
 - menampilkan judul halaman di hasil mesin pencari
 
-# Tabel HTML
+# Tabel HTML &lt;table&gt;
+Setiap sel tabel didefinisikan oleh tag &lt;td&gt; dan &lt;/td&gt; <br>
+Berikut adalah tag yang dipakai dalam membuat tabel di HTML: <br>
+1. &lt;table&gt; : mendefinisikan sebuah tabel
+2. &lt;th&gt; : mendefinisikan judul tabel
+3. &lt;tr&gt; : mendefinisikan baris dalam tabel
+4. &lt;td&gt; : mendefinisikan sel dalam tabel
+5. &lt;caption&gt; : mendefinisikan keterangan tabel
+6. &lt;colgroup&gt; : menentukan grup dari satu kolom atau lebih di sebuah tabel untuk pemformatan.
+7. &lt;col&gt; : menentukan properti kolom untuk setiap kolom dalam elemen &lt;colgroup&gt;
+8. &lt;thead&gt; : mengelompokkan konten header dalam sebuah tabel
+9. &lt;tbody&gt; : mengelompokkan konten body dalam sebuah tabel
+10. &lt;tfoot&gt; : mengelompokkan konten footer dalam sebuah tabel
+
+# Daftar HTML
+1. Daftar HTML Tidak Berurut (pakai dot) <br>
+Dimulai dengan tag &lt;ul&gt;, setiap item dalam daftar dimulai dengan &lt;li&gt;
+2. Daftar HTML yang Diurutkan (pakai nomor)
+Dimulai dengan tag &lt;ol&gt;, setiap item dalam daftar dimulai dengan &lt;li&gt;
+3. Daftar Deskripsi HTML
+- &lt;dl&gt; : untuk mendefinisikan daftar deskripsi
+- &lt;dt&gt; : untuk mendefinisikan istilah (nama)
+- &lt;dd&gt; : untuk mendeskripsikan setiap istilah
+
+# Blok HTML dan ELemen Sebaris
+
+
+
+
 
 
 
