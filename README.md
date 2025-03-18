@@ -354,7 +354,97 @@ Ukuran teks dapat diatur dengan satuan "vw", yang berarti "lebar tampilan".
 - &lt;var&gt; : mendefinisikan variabel dalam pemrograman atau dalam ekspresi matematika
 - &lt;pre&gt; : endefinisikan teks yang telah diformat sebelumnya
 
-#
+# Semantik HTML
+-  &lt;article&gt; : mendefinisikan konten independen dan mandiri
+-  &lt;aside&gt; : menentukan konten selain konten halaman
+-  &lt;details&gt; : menentukan detail tambahan yang dapat dilihat atau disembunyikan oleh pengguna
+-  &lt;figcaption&gt; : menentukan judul untuk elemen &lt;figure&gt; 
+-  &lt;figure&gt; : menentukan konten mandiri, seperti ilustrasi, diagram, foto, daftar kode, dll.
+-  &lt;footer&gt; : menentukan footer untuk dokumen atau bagian
+-  &lt;header&gt; : menentukan header untuk dokumen atau bagian
+-  &lt;main&gt; : menentukan konetn utama suatu dokumen
+-  &lt;mark&gt; : menentukan teks yang ditandai/disorot
+-  &lt;nav&gt; : mendefinisikan tautan navigasi
+-  &lt;section&gt; : menentukan bagian dalam dokumen 
+-  &lt;summary&gt; : menentukan judul yang terlihat untuk elemen &lt;details&gt;
+-  &lt;time&gt; : menentukan tanggal/waktu
+
+# Panduan Gaya HTML
+1. Deklarasi Tipe Dokumen: Selalu mulai dokumen HTML dengan deklarasi tipe dokumen &lt;!DOCTYPE html&gt; untuk memastikan browser mengenali versi HTML yang digunakan. 
+2. Penggunaan Huruf Kecil untuk Nama Elemen: Meskipun HTML tidak peka huruf besar-kecil, disarankan menggunakan huruf kecil untuk nama elemen agar konsisten dan mudah dibaca.
+3. Penutupan Semua Elemen HTML: Meskipun beberapa elemen HTML tidak wajib ditutup, sebaiknya tetap menutup semua elemen untuk menjaga struktur kode yang rapi dan mencegah kesalahan.
+4. Penggunaan Huruf Kecil untuk Nama Atribut: Seperti nama elemen, disarankan menggunakan huruf kecil untuk nama atribut demi konsistensi dan kemudahan pembacaan.
+5. Penggunaan Tanda Kutip untuk Nilai Atribut: Meskipun HTML mengizinkan nilai atribut tanpa tanda kutip, praktik terbaiknya adalah selalu menggunakan tanda kutip untuk menghindari potensi kesalahan.
+6. Inden dan Spasi: Gunakan indentasi dan spasi yang konsisten untuk membuat kode lebih mudah dibaca dan dipahami oleh pengembang lain.
+
+# Entitas HTML
+- Entitas Karakter HTML <br>
+Beberapa karakter seperti &lt;, &gt;, dan & punya makna khusus di HTML, jadi perlu ditulis dalam bentuk entitas agar tidak dianggap sebagai kode.
+- Ruang tanpa putus <br>
+Spasi yang tidak akan terputus menjadi baris baru. Tanda hubung tidak putus ( ‑ ) digunakan untuk menentukan karakter tanda hubung (‑) yang tidak putus pada baris baru.
+
+<img width="359" alt="image" src="https://github.com/user-attachments/assets/f972eb25-192d-4258-8090-17912f4ea26b" />
+
+<img width="419" alt="image" src="https://github.com/user-attachments/assets/fe77c9da-ee0f-4d2c-bf0e-c4884dab0355" />
+
+# Simbol HTML
+<img width="341" alt="image" src="https://github.com/user-attachments/assets/6d7411a5-c23b-4312-bce7-138f7435867a" />
+
+<img width="332" alt="image" src="https://github.com/user-attachments/assets/7b86133c-324f-437c-892b-5d224ad93cfb" />
+
+<img width="353" alt="image" src="https://github.com/user-attachments/assets/3064b822-c599-4f14-a7b8-af5fc6cb5458" />
+
+# Emoji HTML
+Emoji terlihat seperti gambar atau ikon, tetapi sebenarnya tidak. Itu adalah huruf (karakter) dari set karakter UTF-8 (Unicode). 
+
+- &lt;meta&gt; untuk mengetahui set karakter yang digunakan pada halaman tersebut.
+- Karakter UTF-8, tidak dapat diketikan pada keyboard tapi bisa dapat ditampilkan menggunakan angka(entitas).
+- Karakter emoji, emoji juga merupakan karakter dari alfabet UTF-8. contoh: <br>
+😄 is 128516
+😍 is 128525
+💗 is 128151
+
+# Pengkodean HTML (Kumpulan Karakter)
+1. Set Karakter ASCII <br>
+ASCII merupakan standar pengkodean karakter pertama untuk web. Standar ini mendefinisikan 128 karakter berbeda yang dapat digunakan di internet:
+- Huruf bahasa Inggris (AZ)
+- Angka (0-9)
+- Karakter khusus seperti !$ + - ( ) @ < >.
+
+2. Set Karakter ANSI <br>
+ANSI (Windows-1252) adalah set karakter Windows asli:
+- Identik dengan ASCII untuk 127 karakter pertama
+- Karakter khusus dari 128 hingga 159
+- Identik dengan UTF-8 dari 160 hingga 255
+
+3. Set Karakter ISO-8859-1 <br>
+ISO-8859-1 merupakan set karakter default untuk HTML 4. Set karakter ini mendukung 256 kode karakter yang berbeda. HTML 4 juga mendukung UTF-8.
+- Identik dengan ASCII untuk 127 karakter pertama
+- Tidak menggunakan karakter 128 sampai 159
+- Identik dengan ANSI dan UTF-8 dari 160 hingga 255
+
+# Kode URL (alamat web)
+1. URL - Pencari Sumber Daya Seragam
+- skema : mendefinisikan jenis layanan Internet (yang paling umum adalah http atau https )
+- awalan : mendefinisikan awalan domain (default untuk http adalah www )
+- domain : mendefinisikan nama domain Internet (seperti w3schools.com)
+- port : menentukan nomor port pada host (default untuk http adalah 80 )
+- path : menentukan jalur di server (Jika dihilangkan: direktori root situs)
+- nama file : menentukan nama dokumen atau sumber daya
+
+2. Skema URL Umum <br>
+- http (HyperText Transfer Protocol) : Halaman web umum. Tidak dienkripsi
+- https (Secure HyperText Transfer Protocol) :halaman web aman. dienkripsi
+- ftp (File Transfer Protocol) : download atau upload file
+- file : file di komputer
+
+3. Pengkodean URL <br>
+Pengkodean URL mengganti karakter non-ASCII dengan "%" diikuti oleh digit heksadesimal. URL tidak boleh mengandung spasi. Pengkodean URL biasanya mengganti spasi dengan tanda tambah (+), atau %20.
+
+# Perbedaan antara HTML dan XHTML
+XHTML cocok kalau butuh kode yang lebih rapi dan standar, tapi HTML lebih fleksibel
+
+
 
 
 
